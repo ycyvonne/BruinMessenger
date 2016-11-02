@@ -21,21 +21,17 @@ app.get('/login', (req, res) => {
 // TODO: Serve up the rooms page
 app.get('/rooms', (req, res, next) => {
     // TODO
-    return res.redirect('/rooms');
-})
-
-app.get('/rooms', (req, res) => {
-	res.render('rooms');
+    res.render('rooms');
 })
 
 // TODO: 404 for all unregistered routes
 app.use((req, res, next) => {
-	return res.redirect('/404');
-})
-
-app.get('/404', (req, res) => {
 	res.render('404');
 })
+/*
+app.get('/404', (req, res) => {
+	res.render('404');
+})*/
 
 app.listen(port, () => {
   console.log('BruinMessenger running on port: ', port)
