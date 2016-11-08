@@ -14,7 +14,7 @@ function removeItem(id) {
 }
 
 function get() {
-	return rooms;
+	return {rooms};
 }
 
 addItem('Dummy Item 1');
@@ -24,7 +24,4 @@ module.exports = {
 	addItem: addItem,
 	removeItem: removeItem,
 	get: get,
-	data: {
-		rooms: rooms
-	}
 };

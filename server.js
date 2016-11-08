@@ -15,7 +15,7 @@ app.get('/', (req, res, next) => {
 })
 
 app.get('/rooms', (req, res, next) => {
-  res.render('rooms', rooms.data);
+  res.render('rooms', rooms.get());
 })
 
 app.post('/add', (req, res) => {
