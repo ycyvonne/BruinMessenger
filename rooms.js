@@ -23,5 +23,8 @@ addItem('Dummy Item 2');
 module.exports = {
 	addItem: addItem,
 	removeItem: removeItem,
-	get: get
+	get: get,
+	data: {
+		rooms: rooms
+	}
 };

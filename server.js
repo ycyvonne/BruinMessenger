@@ -15,14 +15,13 @@ app.get('/', (req, res, next) => {
 })
 
 app.get('/rooms', (req, res, next) => {
-  res.render('rooms');
+  res.render('rooms', rooms.data);
 })
 
 app.post('/add', (req, res) => {
 	let rm = req.body.roomName;
 	rooms.addItem(rm);
 	res.redirect('/rooms');
-	console.log(rooms.get());
 })
 
 
