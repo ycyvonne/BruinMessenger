@@ -47,7 +47,7 @@ input[name='roomName'] {
 	border:none;
 	outline:none;
 }
-
+/*
 #createBtn {
 	position: absolute;
 	background-color: rgb(50, 132, 191);
@@ -64,34 +64,7 @@ input[name='roomName'] {
 
 #createBtn:hover {
 	background-color: rgb(60, 152, 200);
-}
-
-.roomsListDiv {
-	position: relative;
-	width:460px;
-	height: 368px;
-	overflow-x: hidden;
-	overflow-y: scroll;
-}
-
-.roomsList {
-	margin:0px;
-	padding:0px;
-	list-style:none;
-	font-family: sans-serif;
-}
-
-.roomsList > a {
-	color: #FFF;
-	text-decoration: none;
-}
-
-.roomsList > a > li {
-	padding: 18px;
-	background-color: rgb(245, 235, 202);
-	color: #000;
-	margin-bottom: 1px;
-}
+}*/
 
 .userName {
 	position: absolute;
@@ -133,4 +106,39 @@ input[name='roomName'] {
 
 #logOutBtn:hover {
 	background-color: rgb(232, 48, 39);
+}
+
+.roomsList{
+	list-style-type: none;
+	padding:0px;
+	margin: 0px;
+}
+
+.chat{
+  border-bottom: 1px solid rgb(50, 132, 191);
+  height: 50px;
+  position: relative;
+}
+
+.chat p{
+  width: 290px;
+  margin: 0px;
+  padding: 8px;
+  float: left;
+  font-family: sans-serif;
+  font-size: 30px;
+}
+
+#createBtn, .chat a{
+  background-color: rgb(50, 132, 191);
+  color: white;
+  text-decoration: none;
+  padding: 20px 45px;
+  float: right;
+  margin: 6px;
+  cursor: pointer;
+}
+
+.chat a{
+	padding: 10px;
 }

@@ -19,16 +19,26 @@
 			<p class="userName">Ky-Cuong</p>
 			<a href="/logout" id="logOutBtn">Logout</a>
 		</div>
+
 		<div class="controls">
-			<input type="text" name="roomName" placeholder="Create a new Chatroom">
-			<a href="#" id="createBtn">Create</a>
+			<form action='/add' method='POST'>
+				<input type="text" name="roomName" placeholder="Create a new Chatroom">
+				<!--<a href="#" id="createBtn">Create</a>-->
+				<input type=submit id='createBtn' value='Create'/>
+			</form>
 		</div>
-		<div class="roomsListDiv">
 			<ul class="roomsList" id="roomsListUL">
-			<!-- Loop list items here -->
-			<!-- Loop ends -->
+				<li class="chat">
+					<p>testing 1</p>
+					<a href="/delete/0">X</a>
+				</li>
+				{{#each rooms}}
+				<li class="chat">
+					<p>{{value}}</p>
+					<a href="/delete/{{id}}">X</a>
+				</li>
+				{{/each}}
 			</ul>
-		</div>
 	</div>
 </body>
 </html>
